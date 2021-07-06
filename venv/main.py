@@ -1,9 +1,9 @@
 #-----------------------------PYTHON PRACTICE-------------------------------------
 import keyword
+from math import * #IMPORTING ALL FUNCTIONS FROM THE PYTHON MATH MODULE
 
 my_name = "Dion"
 print("My name is " + my_name + "!")
-
 
 #VARIABLES (PLACEHOLDERS FOR DIFFERENT DATA TYPES)
 name = 'Dion'
@@ -21,7 +21,7 @@ print(len(saiyan))
 print("ok" in saiyan)
 
 #STRING FORMATTING (SIMILIAR TO TEMPLATE LITERALS IN JS)
-sum = f"""The sum of 2 and 4 is {saiyan}"""
+sum = f"The sum of 2 and 4 is {saiyan}"
 print(sum)
 
 longer = "This string is broken up \
@@ -41,20 +41,19 @@ def greet(name, age):
 greet("Bryanna", 24)
 
 
-#ARRAYS
-saiyans = ["goku", "vegeta", "gohan", "goten"]
-saiyans.append("trunks")
-z = len(saiyans) #PRINTING THE LENGTH OF AN ARRAY
-print(z)
-print(saiyans[2])
-saiyans.pop(0) #REMOVING AN ELEMENT BASED ON A SPECIFIED INDEX POSITION
-saiyans.remove("goku") #REMOVING AN ELEMENT BASED ON THE NAME OF THE ELEMENT
+#STORING USER INPUT
+age = input("What is your name?")
 
+print("Hello " + name + "!!")
 
 #LAMBDA ANONYMOUS FUNCTIONS
 #lambda arguments : expression
 x = lambda a, b, c : a + b + c
 print(x(5, 6, 2))
 
+#MATH OPERATORS
+print(pow(2, 3))
+print(abs(-5))
+print(max(4,9))
+print(round(3.6))
 
-# Random Comment
