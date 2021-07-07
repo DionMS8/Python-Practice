@@ -1,4 +1,5 @@
 #-----------------------------PYTHON PRACTICE-------------------------------------
+
 import keyword
 from math import * #IMPORTING ALL FUNCTIONS FROM THE PYTHON MATH MODULE
 
@@ -11,7 +12,18 @@ age: int = 20
 nums = [2,4,6,8]
 print(nums)
 print(type(nums))
+
 PI = 3.14 #NAMING CONSTANTS
+global d  #ADDING A VARIABLE TO THE GLOBAL SCOPE
+d = "me"
+
+#CONVERTING BETWEEN DATA TYPES
+x = 5
+print(typeof(x))
+x = float(x)     #INT -> FLOAT
+x = complex(x)   #INT -> COMPLEX NUMBER
+y = 2.56
+y = int(y)       #FLOAT -> INT
 
 
 #STRING FUNCTIONS
@@ -33,18 +45,6 @@ over multiple lines"
 message = "Part 1 of message "
 message += "Part 2 of message"
 
-
-#FUNCTIONS
-def greet(name, age):
-    print(f"Hello {name} I know your age = {age}")
-
-greet("Bryanna", 24)
-
-
-#STORING USER INPUT
-age = input("What is your name?")
-
-print("Hello " + name + "!!")
 
 #LAMBDA ANONYMOUS FUNCTIONS
 #lambda arguments : expression
