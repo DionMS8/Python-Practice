@@ -22,5 +22,13 @@ print(dayConversions.keys()) #PRINTING THE KEYS IN THE DICTIONARY
 
 #NOTE: KEYS CAN ALSO BE INTEGERS
 
-dictName["KEY"] = newValue #CHANGING THE VALUE OF A KEY
+#CHANGING THE VALUE OF A KEY
+#dictName["KEY"] = newValue
 
+#LOOPING THROUGH A DICTIONARY
+
+for key in dayConversions:
+    print(key)
+
+for key in dayConversions:
+    print(f"Key:{key} and Value: {dayConversions[key]}")

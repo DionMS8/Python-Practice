@@ -52,13 +52,13 @@ while message != "quit":
     message = input(user_prompt)
     print(message)
 
-
-
-
-#--------------------------------FOR LOOPS---------------------------------------
+#---------------------------------------------------------------------------------
 
 puppets = ["walter", "peanut", "jose"]
 for x in puppets:
     print(x)
+
+for index in range(3,10):  #PRINTS ALL ELEMENTS FROM POSITION 3 TO 9
+    print(index)
 
 
