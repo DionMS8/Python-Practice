@@ -63,18 +63,29 @@ for index in range(3,10):  #PRINTS ALL ELEMENTS FROM POSITION 3 TO 9
 
 #*******************************************************************************
 
-#THIS CODE BLOCK USES 2 FOR LOOPS TO ITERATE THROUGH A LIST AND CHECK IF THERE ARE
-#DUPLICATES OF ANY ELEEMNTS
+#DESCRIPTION:
+#THIS FUNCTION USES 2 FOR LOOPS TO ITERATE THROUGH A LIST AND CHECK IF THERE ARE
+#DUPLICATES OF ANY ELEMENTS
+
+def get_duplicates(numbers):
+    for i in range(len(numbers)):
+        for j in range(i+1,len(numbers)):
+            if numbers[i] == numbers[j]:
+                print(f"{numbers[i]} is a duplicate")
+                break
 
 numbers = [3,6,2,4,3,6,8,9]
 
-for i in range(len(numbers)):
-    for j in range(i+1,len(numbers)):
-        if numbers[i] == numbers[j]:
-            print(f"{numbers[i]} is a duplicate")
-            break
+get_duplicates(numbers)
 
+#EXPLANATION:
+#FOR EACH ITERATION OF [i], [j] WILL ITERATE THROUGH THE PROCEEDING VALUES IN THE
+#LIST AND A COMPARISON IS MADE BETWEEN THE VALUE OF [i] AND EACH VALUE FOR [j]
 
-
-
-
+#ORDER OF COMPLEXITY:
+#time = a * n^2 +b
+#KEEPING THE TERM THAT IS GROWING THE FASTEST
+#time = a * n^2
+#REMOVING THE CONSTANTS
+#time = n^2
+#THEREFORE: O(n^2)
