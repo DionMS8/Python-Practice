@@ -48,6 +48,7 @@ message += "Part 2 of message"
 
 #LAMBDA ANONYMOUS FUNCTIONS
 #lambda arguments : expression
+
 x = lambda a, b, c : a + b + c
 print(x(5, 6, 2))
 
@@ -56,4 +57,7 @@ print(pow(2, 3))
 print(abs(-5))
 print(max(4,9))
 print(round(3.6))
+
+
+#EXPRESSIONS = VALUES + ARITHMETIC OPERATORS
 

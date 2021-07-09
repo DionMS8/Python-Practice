@@ -22,3 +22,7 @@ age = int(age)
 if age >= 18:
     print("ADULT")
 else: print("Not Adult")
+
+
+print("STRING REPLICATION" + "!" * 4)
+

@@ -52,7 +52,7 @@ while message != "quit":
     message = input(user_prompt)
     print(message)
 
-#---------------------------------------------------------------------------------
+#******************************************************************************
 
 puppets = ["walter", "peanut", "jose"]
 for x in puppets:
@@ -60,5 +60,21 @@ for x in puppets:
 
 for index in range(3,10):  #PRINTS ALL ELEMENTS FROM POSITION 3 TO 9
     print(index)
+
+#*******************************************************************************
+
+#THIS CODE BLOCK USES 2 FOR LOOPS TO ITERATE THROUGH A LIST AND CHECK IF THERE ARE
+#DUPLICATES OF ANY ELEEMNTS
+
+numbers = [3,6,2,4,3,6,8,9]
+
+for i in range(len(numbers)):
+    for j in range(i+1,len(numbers)):
+        if numbers[i] == numbers[j]:
+            print(f"{numbers[i]} is a duplicate")
+            break
+
+
+
 
 

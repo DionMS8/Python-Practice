@@ -32,3 +32,13 @@ for key in dayConversions:
 
 for key in dayConversions:
     print(f"Key:{key} and Value: {dayConversions[key]}")
+
+
+
+
+
+
+
+
+
+
