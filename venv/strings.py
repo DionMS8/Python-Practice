@@ -1,10 +1,12 @@
+#******************************* STRINGS *****************************************
+
 #REPLACING A CHARCTER IN A STRING
 txt = "Hello World"
 txt = txt.replace("H","J")
 
 #REMOVING WHITESPACE AT BEGINNING AND END OF STRING
 txt = " Hello World "
-x = txt.strip()
+newtxt = txt.strip()
 
 age = 23
 txt = "My name is Dion and I am {}"   #USING A PLACEHOLDER
@@ -23,6 +25,14 @@ if age >= 18:
     print("ADULT")
 else: print("Not Adult")
 
-
 print("STRING REPLICATION" + "!" * 4)
+
+
+#-----CREATING A STRING BUILDER --------------------------------------------------
+
+
+
+
+
+
 
