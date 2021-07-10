@@ -60,7 +60,7 @@ fruits.pop()
 fruits.clear() #REMOVES ALL ITEMS FROM THE LIST
 
 
-#********************************* ARRAYS ***************************************
+#********************************* ARRAYS **************************************
 
 #PYTHON DEALS WITH DYNAMIC ARRAYS BUT NOT STATIC ARRAYS
 #IN STATIC ARRAYS, THE SIZE IS FIXED SO ELEMENTS CANNOT BE INSERTED IN POSITIONS
@@ -81,8 +81,6 @@ for i in range(len(stock_price)):
 #MEMORY AND ALL OF THE EXISTING ELEMENTS WILL BE COPIED THERE
 
 
-
-
 #************************ CREATING A 2-DIMENSIONAL ARRAY ************************
 
 #THIS IS ESSENTIALLY AN ARRAY OF ARRAYS
@@ -101,3 +99,15 @@ print(phone_prices[1][1])
 #TOGETHER WITHIN A SINGLE LIST
 
 #NOTE: 1 BYTE = 8 BITS
+
+
+#********************************* SLICING **************************************
+
+arrayName[start:end+1:step]
+
+x = "dragonballz"
+print(x[-1]) #RETURNS THE LAST ELEMENT => "z"
+print(x[3:]) #RETURNS THE LAST ELEMENT => "onballz"
+print(x[:5]) #RETURNS THE LAST ELEMENT => "drago"
+print(x[-3:]) #RETURNS THE LAST ELEMENT => "llz"
+print(x[:-2]) #RETURNS THE LAST ELEMENT => "dragonbal"

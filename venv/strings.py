@@ -28,7 +28,20 @@ else: print("Not Adult")
 print("STRING REPLICATION" + "!" * 4)
 
 
-#-----CREATING A STRING BUILDER --------------------------------------------------
+#----- CREATING A STRING BUILDER -------------------------------------------------
+
+def join_words(words):
+    sentence = ""
+    for w in words:
+        sentence = sentence + " " + w
+    return sentence
+
+words = ["Cell","was","defeated","by","Gohan"]
+
+print(join_words(words))
+
+#---------------------------------------------------------------------------------
+
 
 
 
