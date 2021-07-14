@@ -29,28 +29,64 @@ print(dayConversions.keys()) #PRINTING THE KEYS IN THE DICTIONARY
 for key in dayConversions:
     print(key)
 
+#LOOPING THROUGH KEYS IS THE DEFAULT BEHAVIOUR WHEN LOOPING THROUGH A DICTIONARY
+
+#BELOW SHOWS HOW TO LOOP THROUGH AND PRINT THE VALUES
 for key in dayConversions:
     print(f"Key:{key} and Value: {dayConversions[key]}")
 
+#ANOTHER EXAMPLE
+favorite_languages = {
+ 'ronnie': 'python',
+ 'lamo': 'c',
+ 'vin': 'ruby',
+ 'dion': 'python',
+ }
+
+print("Dion's favorite language is " + favorite_languages['dion'].title() + ".")
+
 
 #DELETING A KEY-VALUE PAIR
-alien_0 = {
+alien = {
     'color': 'green',
     'points': 5,
 }
-print(alien_0)
+print(alien)
 
-del alien_0['points']
-print(alien_0)
+del alien['points']
+print(alien)
 
 
-favorite_languages = {
- 'jen': 'python',
- 'sarah': 'c',
- 'edward': 'ruby',
- 'phil': 'python',
+#***** NESTING DICTIONARIES INSIDE A BIGGER DICTIONARY ***************************
+
+users = {
+    'dsingh': {
+    'first': 'john',
+    'last': 'doe',
+    'location': 'trinidad',
+    },
+    'borie': {
+    'first': 'jane',
+    'last': 'doe',
+    'location': 'tobago',
+    },
  }
 
-print("Sarah's favorite language is " + favorite_languages['sarah'].upper() + ".")
+for username, user_info in users.items():
+    print(f"Username: {username}")
+    print(f"Full Name: {user_info['first'].title()} {user_info['last'].title()}")
+    print(f"Location: {user_info['location'].title()}")
+
+#NOTE: ITEMS() METHOD RETURNS A LIST OF KEYS AND THEIR ASSOCIATED VALUES
+
+#*********************************************************************************
+
+
+
+
+
+
+
+
 
 
