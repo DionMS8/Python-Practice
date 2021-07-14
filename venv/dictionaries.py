@@ -26,7 +26,6 @@ print(dayConversions.keys()) #PRINTING THE KEYS IN THE DICTIONARY
 #dictName["KEY"] = newValue
 
 #LOOPING THROUGH A DICTIONARY
-
 for key in dayConversions:
     print(key)
 
@@ -34,8 +33,15 @@ for key in dayConversions:
     print(f"Key:{key} and Value: {dayConversions[key]}")
 
 
+#DELETING A KEY-VALUE PAIR
+alien_0 = {
+    'color': 'green',
+    'points': 5,
+}
+print(alien_0)
 
-
+del alien_0['points']
+print(alien_0)
 
 
 
