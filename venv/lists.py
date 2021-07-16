@@ -103,7 +103,7 @@ print(phone_prices[1][1])
 
 #********************************* SLICING **************************************
 
-arrayName[start:end+1:step]
+#arrayName[start:end+1:step]
 
 x = "dragonballz"
 print(x[-1]) #RETURNS THE LAST ELEMENT => "z"
@@ -111,3 +111,28 @@ print(x[3:]) #RETURNS THE LAST ELEMENT => "onballz"
 print(x[:5]) #RETURNS THE LAST ELEMENT => "drago"
 print(x[-3:]) #RETURNS THE LAST ELEMENT => "llz"
 print(x[:-2]) #RETURNS THE LAST ELEMENT => "dragonbal"
+
+
+#***** MOVING ITEMS FROM ONE LIST TO ANOTHER ************************************
+
+#USING A WHILE LOOP TO PULL USERS FROM A LIST OF UNCONFIRMED USERS AS THEY ARE
+#VERIFIED AND THEN ADD THEM TO A SEPARATE LIST OF CONFIRMED USERS
+
+unconfirmed_users = ['broly','frieza','cell','jiren'] #EXISTING LIST
+confirmed_users = [] #CREATING AN EMPTY LIST TO HOLD CONFIRMED USERS
+
+while unconfirmed_users:
+    current_user = unconfirmed_users.pop() #REMOVING USER AND STORING IN A VARIABLE
+    print(f"Verifying User: {current_user.title()}") #PRINTING VERIFICATION MESSAGE
+    confirmed_users.append(current_user) #ADDING USER TO CONFIRMED LIST
+
+print("\nThe following users have been confirmed: ")
+for confirmed_user in confirmed_users: #USING A FOR LOOP TO ITERATE THROUGH LIST
+    print(confirmed_user.title()) #PRINTING THE NAME OF EACH CONFIRMED USER
+
+
+#*******************************************************************************
+
+
+
+
