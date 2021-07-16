@@ -118,11 +118,11 @@ print(x[:-2]) #RETURNS THE LAST ELEMENT => "dragonbal"
 #USING A WHILE LOOP TO PULL USERS FROM A LIST OF UNCONFIRMED USERS AS THEY ARE
 #VERIFIED AND THEN ADD THEM TO A SEPARATE LIST OF CONFIRMED USERS
 
-unconfirmed_users = ['broly','frieza','cell','jiren'] #EXISTING LIST
-confirmed_users = [] #CREATING AN EMPTY LIST TO HOLD CONFIRMED USERS
+unconfirmed_users = ['broly','frieza','cell','jiren'] #THE EXISTING LIST
+confirmed_users = [] #EMPTY LIST TO HOLD THE CONFIRMED USERS
 
-while unconfirmed_users:
-    current_user = unconfirmed_users.pop() #REMOVING USER AND STORING IN A VARIABLE
+while unconfirmed_users: #THIS LOOP RUNS AS LONG AS UNCONFIRMED LIST IS NOT EMPTY
+    current_user = unconfirmed_users.pop() #REMOVING LAST USER AND STORING IN A VARIABLE
     print(f"Verifying User: {current_user.title()}") #PRINTING VERIFICATION MESSAGE
     confirmed_users.append(current_user) #ADDING USER TO CONFIRMED LIST
 
@@ -131,8 +131,16 @@ for confirmed_user in confirmed_users: #USING A FOR LOOP TO ITERATE THROUGH LIST
     print(confirmed_user.title()) #PRINTING THE NAME OF EACH CONFIRMED USER
 
 
-#*******************************************************************************
+#***** REMOVING ALL INSTANCES OF A VALUE FROM A LIST *****************************
 
+pets = ['dog', 'cat', 'dog', 'goldfish', 'cat', 'rabbit', 'cat']
+print(pets)
 
+while 'cat' in pets:
+    pets.remove('cat')
+
+print(pets)
+
+#********************************************************************************
 
 
